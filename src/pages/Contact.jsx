@@ -24,9 +24,9 @@ function Contact() {
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col sm:flex-row w-full max-w-5xl">
           <div className="sm:w-1/2 w-full h-64 sm:h-auto">
             <motion.img
-            loading="eager"
-              initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            loading="lazy"
+              initial={{  x: -40 }}
+            whileInView={{  x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: true }}
               src={assets.hero2}

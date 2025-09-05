@@ -1,13 +1,24 @@
 import { useContext, useEffect, useState } from "react";
+
 import { ShopContext } from "./context/ShopContext";
 import ScrollToTop from "./components/ScrollToTop";
 import { ToastContainer } from "react-toastify";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
+
 import { useRef } from "react";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import AnimatedRoutes from "./components/AnimatedRoutes";
+
 import Lenis from "lenis";
+import Homepage from "./pages/Homepage";
+import Collection from "./pages/Collection";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Cart from "./pages/Cart";
+import Product from "./pages/Product";
+import PlaceOrder from "./pages/PlaceOrder";
+import Orders from "./pages/Orders";
 
 function App() {
   const { isSearchOpen, setIsSearchOpen } = useContext(ShopContext);
@@ -60,7 +71,22 @@ function App() {
       <NavBar onSearchClick={handleSearchClick} />
     <ScrollToTop lenis={lenisRef.current}/>
       <ToastContainer />
-      <AnimatedRoutes />
+  
+     <Routes>
+      <Route  path="/" element={<Homepage/>} />
+      <Route  path="/collection" element={<Collection/>} />
+      <Route  path="/about" element={<About/>} />
+      <Route  path="/contact" element={<Contact/>} />
+      <Route  path="/login" element={<Login/>} />
+      <Route  path="/cart" element={<Cart/>} />
+      <Route  path="/product/:productId" element={<Product/>} />
+      <Route  path="/placeOrder" element={<PlaceOrder/>} />
+      <Route  path="/orders" element={<Orders/>} />
+
+
+    
+     </Routes>
+  
 
       <Footer />
     </div>

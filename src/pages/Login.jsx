@@ -101,12 +101,14 @@ function Login() {
                     placeholder="Password"
                     className="w-full px-4 py-2 border border-[#595959] rounded-md outline-none"
                   />
-                  <button
+                  <motion.button
+                    whileHover={{ backgroundColor: "#7a1e04", scale: 1.02 }}
+                    whileTap={{ scale: 0.95 }}
                     type="submit"
-                    className="w-full bg-[#9C2605] text-white py-2 rounded-md font-medium hover:bg-[#7a1e04] transition-colors"
+                    className="w-full bg-[#9C2605] text-white py-2 rounded-md font-medium "
                   >
                     Sign Up
-                  </button>
+                  </motion.button>
                 </form>
 
                 <div className="flex justify-between text-xs text-[#595959] mt-4">
