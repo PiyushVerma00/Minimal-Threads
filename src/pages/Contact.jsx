@@ -79,12 +79,13 @@ function Contact() {
             whileFocus={{scale:1.02}}
               placeholder="Your Message"
               rows="4"
-              className="w-full px-4 py-2 border border-[#595959] rounded-md outline-none "
+              
+              className="w-full px-4 py-2 border border-[#595959] rounded-md outline-none resize-none "
             ></motion.textarea>
 
             <motion.button
               whileHover={{backgroundColor :"#7a1e04", scale: 1.02}}
-           
+              onSubmit={(e)=>e.preventDefault()}
               whileTap={{ scale: 0.95 }}
               type="submit"
               className="w-full bg-[#9C2605] text-white py-2 rounded-md font-medium "

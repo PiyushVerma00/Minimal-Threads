@@ -7,8 +7,12 @@ import { useNavigate } from "react-router-dom";
 function PlaceOrder() {
   const [method, setMethod] = useState("cod");
   const navigate  = useNavigate()
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    navigate('/orders')
+  }
   return (
-    <div className="flex flex-col sm:flex-row justify-between gap-4  border-t border-[#5959596a] pt-10">
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row justify-between gap-4  border-t border-[#5959596a] pt-10">
       {/* left side */}
       <div className="flex flex-col w-full sm:max-w-[480px] gap-4">
         <div className=" text-xl sm:text-2xl my-3 ">
@@ -127,11 +131,11 @@ function PlaceOrder() {
             </div>
           </div>
           <div className=" w-full text-end mt-5">
-            <button onClick={()=>navigate('/orders')} className=" text-sm text-white bg-[#9C2605] px-12 py-3 rounded-md hover:scale-110 transition-all ease-in-out durantion-500 hover:bg-[#862408] ">PLACE ORDER</button>
+            <button type="submit" className=" text-sm text-white bg-[#9C2605] px-12 py-3 rounded-md hover:scale-110 transition-all ease-in-out durantion-500 hover:bg-[#862408] ">PLACE ORDER</button>
           </div>
         </div>
       </div>
-    </div>
+    </form>
   );
 }
 
