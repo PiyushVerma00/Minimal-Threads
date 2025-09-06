@@ -11,7 +11,7 @@ import CartContextProvider from "./context/CartContext.jsx";
 const isProd = import.meta.env.MODE === "production"; 
 const Router = isProd ? HashRouter : BrowserRouter;
 createRoot(document.getElementById("root")).render(
-  <Router basename={isProd? "/Minimal-Threads" :'/'}>
+  <Router {...(!isProd && { basename: "/" })}>
     <ShopContextProvider>
       <CartContextProvider>
          
