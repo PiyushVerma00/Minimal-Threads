@@ -1,62 +1,72 @@
-# 🧵 Minimal Threads
+<h1 align="center">🧵 Minimal Threads</h1>
 
-A **modern e-commerce frontend** built with **React + TailwindCSS**, designed for a smooth and minimal shopping experience.  
-Currently, this repository hosts the **frontend only** — backend integration is in progress.  
+<p align="center">
+  <b>A modern e-commerce frontend built with React + TailwindCSS, designed for a smooth and minimal shopping experience.</b><br/>
+  Currently, this repository hosts the <b>frontend only</b> — backend integration is in progress.
+</p>
 
----
+<hr/>
 
-## 🚀 Tech Stack
+<h2>🚀 Tech Stack</h2>
+<ul>
+  <li><b>Frontend Framework</b>: <a href="https://react.dev/" target="_blank">React 19</a></li>
+  <li><b>Styling</b>: <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></li>
+  <li><b>Animations</b>: <a href="https://motion.dev/" target="_blank">Framer Motion (motion)</a>, <a href="https://lenis.studiofreight.com/" target="_blank">Lenis</a></li>
+  <li><b>Routing</b>: <a href="https://reactrouter.com/" target="_blank">React Router DOM</a></li>
+  <li><b>State Management</b>: React Context API</li>
+  <li><b>Utilities</b>: <a href="https://fkhadra.github.io/react-toastify/introduction" target="_blank">React Toastify</a>, <a href="https://lucide.dev/icons/" target="_blank">lucide</a></li>
+  <li><b>Build Tool</b>: <a href="https://vite.dev/" target="_blank">Vite</a></li>
+  <li><b>Deployment</b>: GitHub Pages (via <code>gh-pages</code>)</li>
+</ul>
 
-- **Frontend Framework**: [React 19](https://react.dev/)  
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)  
-- **Animations**: [Framer Motion (motion)](https://motion.dev/), [Lenis](https://lenis.studiofreight.com/)  
-- **Routing**: [React Router DOM](https://reactrouter.com/)  
-- **State Management**: React Context API  
-- **Utilities**: [React Toastify](https://fkhadra.github.io/react-toastify/introduction), [lucide](https://lucide.dev/icons/)
-- **Build Tool**: [Vite](https://vite.dev/)  
-- **Deployment**: GitHub Pages (via `gh-pages`)  
+<hr/>
 
----
+<h2>✨ Features (Frontend)</h2>
+<ul>
+  <li>🔑 <b>Authentication Pages</b> – Login & Signup UI (animations included)</li>
+  <li>🛒 <b>Cart System</b> – Add, remove, and manage products (Context API)</li>
+  <li>📦 <b>Place Order Flow</b> – Delivery information + payment method selection</li>
+  <li>📋 <b>Product Pages</b> – Collection page, single product details, category browsing</li>
+  <li>🌐 <b>Responsive Design</b> – Optimized for desktop, tablet, and mobile</li>
+  <li>🎨 <b>Smooth Animations</b> – Page transitions, scroll effects, fade-ins</li>
+  <li>📍 <b>Contact Page</b> – Image + form layout for user inquiries</li>
+</ul>
 
-## ✨ Features (Frontend)
+<hr/>
 
-- 🔑 **Authentication Pages** – Login & Signup UI (animations included)  
-- 🛒 **Cart System** – Add, remove, and manage products (Context API)  
-- 📦 **Place Order Flow** – Delivery information + payment method selection  
-- 📋 **Product Pages** – Collection page, single product details, category browsing  
-- 🌐 **Responsive Design** – Optimized for desktop, tablet, and mobile  
-- 🎨 **Smooth Animations** – Page transitions, scroll effects, fade-ins  
-- 📍 **Contact Page** – Image + form layout for user inquiries  
+<h2>🏗️ Ongoing Work</h2>
+<ul>
+  <li>⚙️ <b>Backend Development</b> (Node.js, Express, MongoDB)</li>
+  <ul>
+    <li>User authentication (JWT + cookies)</li>
+    <li>Orders & payment integration (Stripe, Razorpay)</li>
+    <li>Admin dashboard for product management</li>
+  </ul>
+</ul>
 
----
+<p>This repo will later connect with the backend to become a <b>full MERN stack e-commerce application</b>.</p>
 
-## 🏗️ Ongoing Work
+<hr/>
 
-- ⚙️ **Backend Development** (Node.js, Express, MongoDB)  
-  - User authentication (JWT + cookies)  
-  - Orders & payment integration (Stripe, Razorpay)  
-  - Admin dashboard for product management  
+<h2>📂 Project Structure</h2>
 
-This repo will later connect with the backend to become a **full MERN stack e-commerce application**.  
+<pre>
+frontend/
+├── public/          # Static assets
+├── src/
+│   ├── assets/      # Images, icons
+│   ├── components/  # Reusable UI components
+│   ├── context/     # Context API (Shop, Cart)
+│   ├── pages/       # App pages (Home, Collection, Login, etc.)
+│   ├── App.jsx      # Routes setup
+│   └── main.jsx     # Entry point
+├── package.json
+└── vite.config.js
+</pre>
 
----
+<hr/>
 
-## 📂 Project Structure
-
-- frontend/
-- ├── public/ # Static assets
-- ├── src/
-- │ ├── assets/ # Images, icons
-- │ ├── components/ # Reusable UI components
-- │ ├── context/ # Context API (Shop, Cart)
-- │ ├── pages/ # App pages (Home, Collection, Login, etc.)
-- │ ├── App.jsx # Routes setup
-- │ └── main.jsx # Entry point
-- ├── package.json
-- └── vite.config.js
-
----
-
-## 🌍 Live Demo
-
-- 👉 [Minimal Threads on GitHub Pages](https://piyushverma00.github.io/Minimal-Threads/)
+<h2>🌍 Live Demo</h2>
+<p>
+  👉 <a href="https://piyushverma00.github.io/Minimal-Threads/" target="_blank"><b>Minimal Threads</b></a>
+</p>
